@@ -1,3 +1,5 @@
+If you are trying to use past the 30 days of when it was first published it will not work
+
 One way to run this application: 
 - create a Python virtual environment;
 ```bash
