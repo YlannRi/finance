@@ -2,7 +2,7 @@ import os
 
 from cs50 import SQL
 from flask import Flask, flash, redirect, render_template, request, session
-from flask_session import Session
+from flask  import Session
 from tempfile import mkdtemp
 from werkzeug.security import check_password_hash, generate_password_hash
 
@@ -37,7 +37,7 @@ def after_request(response):
     response.headers["Expires"] = 0
     response.headers["Pragma"] = "no-cache"
     return response
-
+##the code won't work once you log in because you need to create a table before line 48, I already created the table but it's not working so you need to db.execute if not tabel already exist to make it work
 
 @app.route("/")
 @login_required
